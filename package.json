@@ -1,9 +1,12 @@
 {
   "scripts": {
     "design-w": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css --watch",
-    "design": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css"
+    "design": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css",
+    "dev:format": "npx prettier . --write"
   },
   "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1"
   }
 }
