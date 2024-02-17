@@ -544,12 +544,44 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-\[375\] {
+  width: 375;
 }
 
 .flex-row {
@@ -572,6 +604,8 @@ video {
   font-family: Roboto-bold;
 
   src: url(../../assets/fonts/Roboto-Bold.ttf);
+
+  font-weight: 700;
 }
 
 @font-face {
@@ -585,7 +619,10 @@ body {
   font-family: Roboto-regular, sans-serif;
 }
 
-p {
+h1 {
+  font-size: 30px;
+  font-family: Roboto-bold, sans-serif;
+  align-self: flex-start;
 }
 
 /* 
