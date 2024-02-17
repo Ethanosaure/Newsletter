@@ -6,7 +6,15 @@ module.exports = {
       sm: "1px",
       xl: "800px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        darkSlateGrey: "#242533",
+        charcoalGrey: "#353642",
+        grey: "#8E8F99",
+        white: "#FFFFFF",
+        tomato: "#AA0800",
+      },
+    },
   },
   plugins: [],
 };

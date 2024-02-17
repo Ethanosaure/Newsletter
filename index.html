@@ -16,22 +16,28 @@
   </head>
   <body class="flex flex-col items-center justify-center">
     <div
-      class="w-[375]px xl: w-800px flex flex-row items-center justify-center"
+      class="xl: w-800px flex w-[375px] flex-row items-center justify-center"
     >
-      <div class="flex flex-col items-center justify-center">
+      <div
+        class="flex flex-col items-center justify-center border border-solid"
+      >
         <img
           src="./public/images/illustration-sign-up-mobile.svg"
           alt="signup image"
           class="xl:hidden"
         />
-        <h1 class="mb-7 mt-12">Stay updated!</h1>
-        <span>Join 60,000+ product managers receiving monthly updates on:</span>
-        <ul>
-          <li>Product discovery and building</li>
-          <li>what matters Measuring to ensure updates are a success</li>
+        <h1 class="text-darkSlateGrey mb-[15px] ml-[25px] mt-[40px]">
+          Stay updated!
+        </h1>
+        <span class="mb-[15px] ml-[25px] text-[16px] font-medium"
+          >Join 60,000+ product managers receiving monthly updates on:</span
+        >
+        <ul class="text-[16px]s ml-[10px] w-[280px]">
+          <li class="">Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <div>
+        <div class="ml-[25px]">
           <h3>Email address</h3>
           <input type="email" placeholder="email@company.com" />
           <button type="submit">Subscribe to monthly newsletter</button>
