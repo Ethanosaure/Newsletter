@@ -14,45 +14,62 @@
 
     <title>Ethanosaure | Newsletter sign-up form with success message</title>
   </head>
-  <body class="flex flex-col items-center justify-center">
+  <body
+    class="flex h-[800px] flex-col items-center justify-center bg-darkSlateGrey"
+  >
     <div
-      class="xl: w-800px flex w-[375px] flex-row items-center justify-center"
+      id="newsletter"
+      class="flex w-[375px] flex-row items-center justify-center rounded-xl bg-white xl:w-[800px] xl:pl-[10px]"
     >
-      <div
-        class="flex flex-col items-center justify-center border border-solid"
-      >
+      <div class="flex flex-col items-center justify-center xl:w-[50%]">
         <img
           src="./public/images/illustration-sign-up-mobile.svg"
           alt="signup image"
           class="xl:hidden"
         />
-        <h1 class="text-darkSlateGrey mb-[15px] ml-[25px] mt-[40px]">
+        <h1 class="mb-[15px] ml-[25px] mt-[30px] text-darkSlateGrey">
           Stay updated!
         </h1>
         <span class="mb-[15px] ml-[25px] text-[16px] font-medium"
           >Join 60,000+ product managers receiving monthly updates on:</span
         >
-        <ul class="text-[16px]s ml-[10px] w-[280px]">
-          <li class="">Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+        <ul
+          class="ml-[10px] w-[280px] list-outside text-[16px] xl:ml-0 xl:mr-[20px]"
+        >
+          <li class="mb-[10px] mt-[10px] pl-[10px] text-left xl:w-[400px]">
+            Product discovery and building what matters
+          </li>
+          <li class="mb-[10px] pl-[10px] text-left xl:w-[400px]">
+            Measuring to ensure updates are a success
+          </li>
+          <li class="mb-[10px] pl-[10px] text-left xl:mb-0">And much more!</li>
         </ul>
-        <div class="ml-[25px]">
-          <h3>Email address</h3>
-          <input type="email" placeholder="email@company.com" />
-          <button type="submit">Subscribe to monthly newsletter</button>
+        <div class="ml-[25px] mt-[40px]">
+          <h3 class="mb-[7px] font-thin">Email address</h3>
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="email@company.com"
+            class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[350px]"
+          />
+          <button
+            type="submit"
+            class="mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey font-medium text-white xl:w-[350px]"
+          >
+            Subscribe to monthly newsletter
+          </button>
         </div>
       </div>
-      <div>
+      <div class="xl:h-[90%] xl:w-[50%]">
         <img
           src="./public/images/illustration-sign-up-desktop.svg"
           alt="signup image"
-          class="hidden xl:flex"
+          class="hidden w-[340px] xl:mb-10 xl:ml-[40px] xl:flex"
         />
       </div>
     </div>
 
-    <div class="SuccessMessage">
+    <div id="SuccessMessage" class="show:visible hidden">
       <img src="./public/images/icon-success.svg" alt="success icon" />
       <h1>Thanks for subscribing!</h1>
       <p>
