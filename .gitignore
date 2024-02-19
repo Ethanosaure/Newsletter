@@ -16,3 +16,6 @@
 .prettierignore
 node_modules
 dist/
+design/
+README-template.md
+style-guide.md

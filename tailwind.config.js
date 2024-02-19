@@ -13,6 +13,8 @@ module.exports = {
         grey: "#8E8F99",
         white: "#FFFFFF",
         tomato: "#AA0800",
+        salmon: "#ff5379",
+        orange: "#ff673e",
       },
     },
   },
