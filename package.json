@@ -3,7 +3,9 @@
     "design-w": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css --watch",
     "design": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css",
     "dev:format": "npx prettier . --write",
-    "linter": "eslint --ignore-path .eslintignore --ext .js ."
+    "linter": "eslint --ignore-path .eslintignore --ext .js .",
+    "build": "tsc",
+    "tsc-w": "tsc -w"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.1",

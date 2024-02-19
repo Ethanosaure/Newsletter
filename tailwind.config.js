@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  error: "class",
   content: ["./public/src/*.js", "index.html"],
   theme: {
     screens: {
@@ -15,6 +16,8 @@ module.exports = {
         tomato: "#AA0800",
         salmon: "#ff5379",
         orange: "#ff673e",
+        errorText: "#ef877d",
+        errorInput: "#ffe8e6",
       },
     },
   },

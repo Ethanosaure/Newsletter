@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./public/style/output.css" rel="stylesheet" />
+    <!-- <script src="./src/index.js"></script> -->
+    <script src="./dist/src/index.js" defer></script>
 
     <link
       rel="icon"
@@ -15,7 +17,7 @@
     <title>Ethanosaure | Newsletter sign-up form with success message</title>
   </head>
   <body
-    class="flex h-[900px] flex-col items-center justify-center bg-darkSlateGrey"
+    class="flex h-[800px] flex-col items-center justify-center bg-darkSlateGrey"
   >
     <div
       id="newsletter"
@@ -52,21 +54,22 @@
           </li>
         </ul>
         <div class="ml-[25px] mt-[40px]">
-          <h3 class="mb-[7px] font-thin">Email address</h3>
-          <form>
-            <input
-              id="emailInput"
-              type="email"
-              placeholder="email@company.com"
-              class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[350px]"
-            />
-            <button
-              type="submit"
-              class="hover:from-salmon hover:to-orange mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white xl:w-[350px]"
-            >
-              Subscribe to monthly newsletter
-            </button>
-          </form>
+          <div id="errorElement" class="flex flex-row justify-between">
+            <h3 class="mb-[7px] font-thin">Email address</h3>
+          </div>
+          <input
+            id="emailInput"
+            type="email"
+            placeholder="email@company.com"
+            class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[350px]"
+          />
+          <button
+            id="submitButton"
+            type="button"
+            class="mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white hover:from-salmon hover:to-orange xl:w-[350px]"
+          >
+            Subscribe to monthly newsletter
+          </button>
         </div>
       </div>
       <div class="xl:h-[90%] xl:w-[50%]">
