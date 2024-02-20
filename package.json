@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "design-w": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css --watch",
+    "dev:design": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css --watch",
     "design": "npx tailwindcss -i ./public/style/style.css -o ./public/style/output.css",
     "dev:format": "npx prettier . --write",
     "linter": "eslint --ignore-path .eslintignore --ext .js .",
     "build": "tsc",
-    "tsc-w": "tsc -w"
+    "dev:build": "tsc -w",
+    "dev:compile": "npm run build && npm run design "
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.1",
