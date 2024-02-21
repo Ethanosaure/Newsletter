@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./public/style/output.css" rel="stylesheet" />
-    <!-- <script src="./src/index.js"></script> -->
-    <script src="./dist/src/index.js" defer></script>
+    <!-- <script src="./src/index.js"></script> CICD -->
+    <script src="./dist/src/index.js" type="module" defer></script>
 
     <link
       rel="icon"
@@ -17,7 +17,7 @@
     <title>Ethanosaure | Newsletter sign-up form with success message</title>
   </head>
   <body
-    class="flex h-[800px] flex-col items-center justify-center bg-darkSlateGrey"
+    class="flex h-[700px] flex-col items-center justify-center bg-darkSlateGrey"
   >
     <div
       id="newsletter"
@@ -88,12 +88,12 @@
 
     <div
       id="SuccessMessage"
-      class="flex hidden h-[80%] w-[375px] flex-col justify-center bg-white xl:h-auto xl:w-[440px] xl:items-start xl:rounded-xl xl:border xl:border-solid xl:border-white"
+      class="hidden h-[100%] w-[375px] flex-col justify-center bg-white xl:h-auto xl:w-[440px] xl:items-start xl:rounded-xl xl:border xl:border-solid xl:border-white"
     >
       <img
         src="./public/images/icon-success.svg"
         alt="success icon"
-        class="mb-[20px] ml-[30px] w-12 xl:mb-[40px] xl:ml-[40px] xl:mt-[40px]"
+        class="mb-[20px] ml-[30px] mt-[40px] w-12 xl:mb-[40px] xl:ml-[40px]"
       />
       <h1
         class="mb-[20px] ml-[30px] w-[200px] leading-8 xl:mb-[40px] xl:ml-[40px] xl:w-[280px] xl:text-[50px]"

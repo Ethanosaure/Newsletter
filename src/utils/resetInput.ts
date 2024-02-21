@@ -1,4 +1,4 @@
-export default function resetInput(emailInput: HTMLInputElement): void {
+export function resetInput(emailInput: HTMLInputElement): void {
   if (emailInput) {
     emailInput.addEventListener("click", (e) => {
       e.preventDefault();

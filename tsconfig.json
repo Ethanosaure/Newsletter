@@ -4,7 +4,7 @@
     "noImplicitAny": true,
     "outDir": "dist/src/",
     "target": "es2016",
-    "module": "CommonJS",
+    "module": "ES6",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

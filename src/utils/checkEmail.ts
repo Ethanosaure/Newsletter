@@ -1,4 +1,4 @@
-export default function checkEmail({
+export function checkEmail({
   emailInput,
   newsLetter,
   successMsg,

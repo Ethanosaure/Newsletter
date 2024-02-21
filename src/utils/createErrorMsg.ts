@@ -1,4 +1,4 @@
-export default function createErrorMsg({
+export function createErrorMsg({
   emailInput,
   errorDiv,
 }: {
