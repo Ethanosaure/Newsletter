@@ -3,36 +3,26 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Roboto-bold;
-  src: url(../fonts/Roboto-Bold.ttf);
-  font-weight: 700;
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 @font-face {
-  font-family: Roboto-regular;
-  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: RobotoRegular;
+  src: url("../fonts/Roboto-Regular.ttf");
 }
-body {
-  font-size: 16px;
-  font-family: Roboto-regular, sans-serif;
+@layer base {
+  h1,
+  h3 {
+    @apply font-[RobotoBold];
+  }
+  p,
+  span {
+    @apply font-[RobotoRegular];
+  }
 }
-h1 {
-  font-size: 40px;
-  font-family: Roboto-bold, sans-serif;
-  align-self: flex-start;
+.errorText {
+  @apply text-xs text-errorText;
 }
-h3 {
-  font-family: Roboto-bold, sans-serif;
-  font-size: 14px;
-}
-
-li::marker {
-  padding-top: 10px;
-}
-
-li {
-  font-size: 16px;
-  font-family: Roboto-regular, sans-serif;
-}
-#errorText {
-  color: "#ef877d";
+.errorInput {
+  @apply border-errorText bg-errorInputPlaceholder text-errorText placeholder:text-errorText;
 }

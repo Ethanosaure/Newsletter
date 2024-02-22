@@ -11,6 +11,7 @@ export function createErrorMsg({
   const errorText = document.createElement("h3");
   errorText.innerText = "valid email required";
   errorText.setAttribute("id", "errorText");
-  emailInput.classList.add("bg-errorText");
+  errorText.setAttribute("class", "errorText");
+  emailInput.classList.add("errorInput");
   errorDiv.appendChild(errorText);
 }

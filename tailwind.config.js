@@ -4,10 +4,14 @@ module.exports = {
   content: ["./public/src/*.js", "index.html"],
   theme: {
     screens: {
-      sm: "1px",
-      xl: "800px",
+      md: "768px",
+      xl: "1000px",
     },
     extend: {
+      backgroundImage: {
+        illustrationSignUp:
+          "url('/public/images/illustration-sign-up-desktop.svg')",
+      },
       colors: {
         darkSlateGrey: "#242533",
         charcoalGrey: "#353642",
@@ -18,6 +22,7 @@ module.exports = {
         orange: "#ff673e",
         errorText: "#ef877d",
         errorInput: "#ffe8e6",
+        errorInputPlaceholder: "#ffe8e6",
       },
     },
   },

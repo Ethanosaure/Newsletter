@@ -17,73 +17,73 @@
     <title>Ethanosaure | Newsletter sign-up form with success message</title>
   </head>
   <body
-    class="flex h-[700px] flex-col items-center justify-center bg-darkSlateGrey"
+    class="flex h-screen flex-col items-center justify-center bg-darkSlateGrey"
   >
     <div
       id="newsletter"
-      class="visible flex w-[375px] flex-row items-center rounded-xl bg-white xl:w-[800px] xl:pl-[10px]"
+      class="visible flex w-[375px] flex-row items-center rounded-xl bg-white xl:h-[60vh] xl:min-h-[550px] xl:w-[50vw] xl:min-w-[840px] xl:justify-center xl:pb-[1%] xl:pt-[1%]"
     >
-      <div class="flex flex-col items-center justify-center xl:w-[50%]">
+      <div
+        class="flex flex-col items-center justify-center xl:h-[100%] xl:w-[50%]"
+      >
         <img
           src="./public/images/illustration-sign-up-mobile.svg"
           alt="signup image"
           class="xl:hidden"
         />
-        <h1 class="mb-[15px] ml-[25px] mt-[30px] text-darkSlateGrey">
+        <h1
+          class="mb-[5%] ml-[7%] mt-[10%] self-start text-4xl text-[4xl] text-darkSlateGrey"
+        >
           Stay updated!
         </h1>
-        <span class="mb-[15px] ml-[25px] text-[16px] font-medium"
+        <span class="mb-[5%] ml-[7%] text-sm xl:self-start"
           >Join 60,000+ product managers receiving monthly updates on:</span
         >
-        <ul
-          class="ml-[10px] flex w-[90%] flex-col text-[16px] xl:ml-0 xl:mr-[20px]"
-        >
-          <li
-            class="mb-[10px] mt-[10px] flex items-start xl:ml-[10px] xl:w-[400px]"
-          >
-            <img src="./public/images/icon-list.svg " class="mr-[10px]" />
+        <ul class="ml-[7%] flex w-[90%] flex-col text-sm xl:ml-0 xl:mr-[6%]">
+          <li class="mb-[3%] flex items-start xl:ml-[5%] xl:w-[400px]">
+            <img src="./public/images/icon-list.svg " class="mr-[5%]" />
             Product discovery and building what matters
           </li>
-          <li class="mb-[10px] flex items-start xl:ml-[10px] xl:w-[400px]">
-            <img src="./public/images/icon-list.svg" class="mr-[10px]" />
+          <li class="mb-[3%] flex items-start xl:ml-[5%] xl:w-[400px]">
+            <img src="./public/images/icon-list.svg" class="mr-[5%]" />
             Measuring to ensure updates are a success
           </li>
-          <li class="mb-[10px] flex items-start xl:mb-0 xl:ml-[10px]">
-            <img src="./public/images/icon-list.svg" class="mr-[10px]" />
-            And much more!
+          <li class="mb-[3%] flex items-start xl:mb-0 xl:ml-[5%]">
+            <img src="./public/images/icon-list.svg" class="mr-[5%]" />And much
+            more!
           </li>
         </ul>
         <div class="ml-[25px] mt-[40px]">
           <div
             id="errorElement"
-            class="flex w-[325px] flex-row justify-between xl:w-[350px]"
+            class="flex w-[325px] flex-row justify-between xl:w-[100%] xl:max-w-[484px]"
           >
-            <h3 class="mb-[7px] font-thin">Email address</h3>
+            <h3 class="mb-[7px] text-xs">Email address</h3>
           </div>
           <form id="form">
             <input
               id="emailInput"
               type="email"
               placeholder="email@company.com"
-              class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[350px]"
+              class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[100%] xl:max-w-[484px]"
             />
             <button
               id="submitButton"
               type="submit"
-              class="mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white hover:from-salmon hover:to-orange xl:w-[350px]"
+              class="mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white hover:from-salmon hover:to-orange xl:w-[100%] xl:max-w-[484px]"
             >
               Subscribe to monthly newsletter
             </button>
           </form>
         </div>
       </div>
-      <div class="xl:h-[90%] xl:w-[50%]">
-        <img
-          src="./public/images/illustration-sign-up-desktop.svg"
-          alt="signup image"
-          class="hidden w-[340px] xl:mb-10 xl:ml-[40px] xl:flex"
-        />
-      </div>
+      <div class="hidden xl:flex xl:h-[100%] xl:w-[2%]"></div>
+      <div
+        class="hidden xl:flex xl:h-[100%] xl:w-[50%] xl:rounded-xl xl:bg-contain xl:bg-center xl:bg-no-repeat"
+        style="
+          background-image: url(./public/images/illustration-sign-up-desktop.svg);
+        "
+      ></div>
     </div>
 
     <div

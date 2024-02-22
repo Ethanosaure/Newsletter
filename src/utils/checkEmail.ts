@@ -1,14 +1,12 @@
-export function checkEmail({
-  emailInput,
-  newsLetter,
-  successMsg,
-  userEmail,
-}: {
+interface checkEmailProps {
   emailInput: HTMLInputElement;
   newsLetter: HTMLDivElement;
   successMsg: HTMLDivElement;
   userEmail: HTMLElement;
-}): boolean {
+}
+
+export function checkEmail(props: checkEmailProps): boolean {
+  const { emailInput, newsLetter, successMsg, userEmail } = props;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailInput.value) {
     if (emailRegex.test(emailInput.value)) {
