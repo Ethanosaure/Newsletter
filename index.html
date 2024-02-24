@@ -21,25 +21,25 @@
   >
     <div
       id="newsletter"
-      class="flex w-[375px] flex-row items-center rounded-xl bg-white xl:h-[60vh] xl:min-h-[550px] xl:w-[50vw] xl:min-w-[840px] xl:justify-center xl:pb-[1%] xl:pt-[1%]"
+      class="flex h-screen w-screen min-w-[375px] max-w-[790px] items-start justify-center rounded-xl bg-white xl:h-[48vh] xl:min-h-[550px] xl:w-[50vw] xl:min-w-[840px] xl:justify-center xl:pb-[1%] xl:pt-[1%]"
     >
       <div
-        class="flex flex-col items-center justify-center xl:h-[100%] xl:w-[50%]"
+        class="flex h-[100%] flex-col items-start xl:h-[100%] xl:w-[50%] xl:justify-center"
       >
         <img
           src="./public/images/illustration-sign-up-mobile.svg"
           alt="signup image"
-          class="xl:hidden"
+          class="mb-[6%] w-[100%] xl:hidden"
         />
-        <h1
-          class="mb-[5%] ml-[7%] mt-[10%] self-start text-4xl text-[4xl] text-darkSlateGrey"
-        >
+        <h1 class="mb-[4%] ml-[10%] text-4xl text-darkSlateGrey">
           Stay updated!
         </h1>
-        <span class="mb-[5%] ml-[7%] text-sm xl:self-start"
+        <span class="mb-[4%] ml-[10%] w-[70%] text-sm xl:w-[80%] xl:self-start"
           >Join 60,000+ product managers receiving monthly updates on:</span
         >
-        <ul class="ml-[7%] flex w-[90%] flex-col text-sm xl:ml-0 xl:mr-[6%]">
+        <ul
+          class="mb-[8%] ml-[10%] flex w-[70%] flex-col text-sm xl:ml-[6%] xl:mr-[6%]"
+        >
           <li class="mb-[3%] flex items-start xl:ml-[5%] xl:w-[400px]">
             <img src="./public/images/icon-list.svg " class="mr-[5%]" />
             Product discovery and building what matters
@@ -48,29 +48,29 @@
             <img src="./public/images/icon-list.svg" class="mr-[5%]" />
             Measuring to ensure updates are a success
           </li>
-          <li class="mb-[3%] flex items-start xl:mb-0 xl:ml-[5%]">
+          <li class="flex items-start xl:mb-0 xl:ml-[5%]">
             <img src="./public/images/icon-list.svg" class="mr-[5%]" />And much
             more!
           </li>
         </ul>
-        <div class="ml-[25px] mt-[40px]">
+        <div class="ml-[10%] w-[70%] xl:w-[90%]">
           <div
             id="errorElement"
-            class="flex w-[325px] flex-row justify-between xl:w-[100%] xl:max-w-[484px]"
+            class="flex w-[100%] flex-row justify-between xl:w-[100%] xl:max-w-[484px]"
           >
-            <h3 class="mb-[7px] text-xs">Email address</h3>
+            <h3 class="mb-[2%] text-xs">Email address</h3>
           </div>
           <form id="form">
             <input
               id="emailInput"
               type="email"
               placeholder="email@company.com"
-              class="mb-[20px] h-[50px] w-[325px] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[100%] xl:max-w-[484px]"
+              class="mb-[4%] h-[50px] w-[100%] rounded-md border border-solid border-grey pl-[20px] font-medium text-charcoalGrey xl:w-[100%] xl:max-w-[484px]"
             />
             <button
               id="submitButton"
               type="submit"
-              class="mb-[50px] h-[50px] w-[325px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white hover:from-salmon hover:to-orange xl:w-[100%] xl:max-w-[484px]"
+              class="h-[50px] w-[100%] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r font-medium text-white hover:from-salmon hover:to-orange xl:w-[100%] xl:max-w-[484px]"
             >
               Subscribe to monthly newsletter
             </button>
