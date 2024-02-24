@@ -606,6 +606,14 @@ p,
   margin-top: 40px;
 }
 
+.ml-\[5\%\] {
+  margin-left: 5%;
+}
+
+.ml-\[10\%\] {
+  margin-left: 10%;
+}
+
 .flex {
   display: flex;
 }
@@ -624,6 +632,14 @@ p,
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[30px\] {
+  height: 30px;
 }
 
 .w-12 {
@@ -650,6 +666,63 @@ p,
   width: 90%;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
+.min-w-\[375px\] {
+  min-width: 375px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -666,6 +739,10 @@ p,
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -674,8 +751,20 @@ p,
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .self-start {
   align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-md {
@@ -697,6 +786,11 @@ p,
 .border-grey {
   --tw-border-opacity: 1;
   border-color: rgb(142 143 153 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-darkSlateGrey {
@@ -731,6 +825,66 @@ p,
 
 .pt-\[15px\] {
   padding-top: 15px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
+.pr-\[100\%\] {
+  padding-right: 100%;
+}
+
+.pl-\[100\%\] {
+  padding-left: 100%;
+}
+
+.pl-\[50\%\] {
+  padding-left: 50%;
+}
+
+.pr-\[50\%\] {
+  padding-right: 50%;
+}
+
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.pl-\[max\] {
+  padding-left: max;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-\[50px\] {
+  padding-left: 50px;
+}
+
+.pl-\[90px\] {
+  padding-left: 90px;
+}
+
+.pl-\[113px\] {
+  padding-left: 113px;
+}
+
+.pr-\[113px\] {
+  padding-right: 113px;
 }
 
 .text-4xl {
@@ -828,6 +982,10 @@ p,
 }
 
 @media (min-width: 1000px) {
+  .xl\:visible {
+    visibility: visible;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -860,6 +1018,34 @@ p,
     margin-top: 0;
   }
 
+  .xl\:mb-\[10\%px\] {
+    margin-bottom: 10%px;
+  }
+
+  .xl\:mb-\[20\%\] {
+    margin-bottom: 20%;
+  }
+
+  .xl\:mb-\[10\%\] {
+    margin-bottom: 10%;
+  }
+
+  .xl\:mb-\[5\%\] {
+    margin-bottom: 5%;
+  }
+
+  .xl\:mt-\[5\%\] {
+    margin-top: 5%;
+  }
+
+  .xl\:mt-\[7\%\] {
+    margin-top: 7%;
+  }
+
+  .xl\:mb-\[7\%\] {
+    margin-bottom: 7%;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -880,8 +1066,32 @@ p,
     height: auto;
   }
 
+  .xl\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .xl\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .xl\:h-\[98\%\] {
+    height: 98%;
+  }
+
+  .xl\:h-\[\] {
+    height: ;
+  }
+
+  .xl\:h-\[90\%\] {
+    height: 90%;
+  }
+
   .xl\:min-h-\[550px\] {
     min-height: 550px;
+  }
+
+  .xl\:min-h-\[440px\] {
+    min-height: 440px;
   }
 
   .xl\:w-\[100\%\] {
@@ -912,24 +1122,64 @@ p,
     width: 50vw;
   }
 
+  .xl\:w-\[40vw\] {
+    width: 40vw;
+  }
+
+  .xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .xl\:min-w-\[840px\] {
     min-width: 840px;
+  }
+
+  .xl\:min-w-\[487px\] {
+    min-width: 487px;
+  }
+
+  .xl\:min-w-\[500px\] {
+    min-width: 500px;
   }
 
   .xl\:max-w-\[484px\] {
     max-width: 484px;
   }
 
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
   .xl\:items-start {
     align-items: flex-start;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
   }
 
   .xl\:justify-center {
     justify-content: center;
   }
 
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:justify-around {
+    justify-content: space-around;
+  }
+
   .xl\:self-start {
     align-self: flex-start;
+  }
+
+  .xl\:self-center {
+    align-self: center;
   }
 
   .xl\:rounded-xl {
@@ -977,6 +1227,10 @@ p,
     padding-top: 1%;
   }
 
+  .xl\:pr-\[100\%\] {
+    padding-right: 100%;
+  }
+
   .xl\:text-\[50px\] {
     font-size: 50px;
   }
@@ -984,5 +1238,18 @@ p,
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .xl\:leading-10 {
+    line-height: 2.5rem;
   }
 }

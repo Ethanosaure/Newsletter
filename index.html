@@ -17,11 +17,11 @@
     <title>Ethanosaure | Newsletter sign-up form with success message</title>
   </head>
   <body
-    class="flex h-screen flex-col items-center justify-center bg-darkSlateGrey"
+    class="flex h-screen w-screen flex-col items-center justify-center bg-darkSlateGrey"
   >
     <div
       id="newsletter"
-      class="visible flex w-[375px] flex-row items-center rounded-xl bg-white xl:h-[60vh] xl:min-h-[550px] xl:w-[50vw] xl:min-w-[840px] xl:justify-center xl:pb-[1%] xl:pt-[1%]"
+      class="flex w-[375px] flex-row items-center rounded-xl bg-white xl:h-[60vh] xl:min-h-[550px] xl:w-[50vw] xl:min-w-[840px] xl:justify-center xl:pb-[1%] xl:pt-[1%]"
     >
       <div
         class="flex flex-col items-center justify-center xl:h-[100%] xl:w-[50%]"
@@ -88,33 +88,36 @@
 
     <div
       id="SuccessMessage"
-      class="hidden h-[100%] w-[375px] flex-col justify-center bg-white xl:h-auto xl:w-[440px] xl:items-start xl:rounded-xl xl:border xl:border-solid xl:border-white"
+      class="hidden h-screen w-screen min-w-[375px] flex-col justify-center bg-white xl:h-[50vh] xl:min-h-[440px] xl:w-[40vw] xl:min-w-[500px] xl:items-center xl:justify-center xl:rounded-xl xl:border xl:border-solid xl:border-white"
     >
-      <img
-        src="./public/images/icon-success.svg"
-        alt="success icon"
-        class="mb-[20px] ml-[30px] mt-[40px] w-12 xl:mb-[40px] xl:ml-[40px]"
-      />
-      <h1
-        class="mb-[20px] ml-[30px] w-[200px] leading-8 xl:mb-[40px] xl:ml-[40px] xl:w-[280px] xl:text-[50px]"
+      <div
+        class="flex h-[100%] w-[80%] max-w-[500px] flex-col items-center justify-between self-center"
       >
-        Thanks for subscribing!
-      </h1>
-      <p
-        class="ml-[30px] w-[350px] font-medium leading-5 xl:mb-[40px] xl:ml-[40px] xl:text-xs"
-      >
-        A confirmation email has been sent to
-        <strong id="userEmail"></strong> Please open it and click the button
-        inside to confirm your subscription.
-      </p>
-      <form id="dismissForm">
-        <button
-          type="submit"
-          class="ml-[30px] mt-[200px] rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r pb-[15px] pl-[100px] pr-[100px] pt-[15px] text-white hover:from-salmon hover:to-orange xl:mb-[50px] xl:ml-[40px] xl:mt-[0] xl:pl-[100px] xl:pr-[100px]"
+        <div class="spacer"></div>
+        <div
+          class="flex h-[70%] flex-col items-start justify-evenly self-center"
         >
-          Dismiss message
-        </button>
-      </form>
+          <img src="./public/images/icon-success.svg" alt="success icon" />
+          <h1 class="text-4xl leading-8 xl:leading-10">
+            Thanks for subscribing!
+          </h1>
+          <p class="xl:text-md font-medium leading-5 xl:mb-[5%] xl:ml-0">
+            A confirmation email has been sent to
+            <strong id="userEmail"></strong> Please open it and click the button
+            inside to confirm your subscription.
+          </p>
+          <div class="spacer"></div>
+        </div>
+        <form id="dismissForm" class="">
+          <button
+            type="submit"
+            class="rounded-md border border-solid bg-darkSlateGrey bg-gradient-to-r pb-[10px] pl-[113px] pr-[113px] pt-[10px] text-white hover:from-salmon hover:to-orange xl:mb-[7%] xl:self-start xl:pl-[100px] xl:pr-[100px]"
+          >
+            Dismiss message
+          </button>
+        </form>
+        <div class="spacer"></div>
+      </div>
     </div>
 
     <!-- <div class="attribution">

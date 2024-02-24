@@ -13,7 +13,8 @@ export function checkEmail(props: checkEmailProps): boolean {
       console.log(emailInput.value);
       newsLetter.classList.add("hidden");
       successMsg.classList.replace("hidden", "visible");
-      userEmail.innerText = emailInput.value;
+      successMsg.classList.add("flex"),
+        (userEmail.innerText = emailInput.value);
       return true;
     } else {
       return false;
