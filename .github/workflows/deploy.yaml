@@ -39,7 +39,7 @@ jobs:
         run: npm run design
 
       - name: typescript
-        run: npm run tsc
+        run: npm run build
 
       - name: copy index.html in dist
         run: cp index.html ./dist/
