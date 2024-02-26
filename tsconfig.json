@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "noImplicitAny": true,
-    "outDir": "dist/src/",
+    "outDir": "src/",
     "target": "es2016",
     "module": "ES6",
     "esModuleInterop": true,
